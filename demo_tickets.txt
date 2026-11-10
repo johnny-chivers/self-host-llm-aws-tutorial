@@ -1,0 +1,15 @@
+# Tickets used on camera. Copy-paste in this order.
+
+COLD OPEN / OFFLOAD
+cloudfront returning 502 for everyone on the main website. whole site is down
+
+LOCAL TRY-OUTS
+our lambda keeps timing out when it calls the RDS db, started after yesterdays deploy. checkout is completely down for ALL customers!!
+quick question - why is my EC2 bill higher this month? might have left a few test instances running
+ECS tasks failing to start in staging with CannotPullContainerError. private subnet, no NAT i think?
+
+FIRST AWS CALL
+s3 costs doubled, think old object versions are piling up. low priority
+
+COLD START
+dynamodb throwing ProvisionedThroughputExceededException at peak in prod. some writes failing, site mostly ok

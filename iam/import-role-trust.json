@@ -1,0 +1,14 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": { "Service": "bedrock.amazonaws.com" },
+      "Action": "sts:AssumeRole",
+      "Condition": {
+        "StringEquals": { "aws:SourceAccount": "ACCOUNT_ID" },
+        "ArnEquals": { "aws:SourceArn": "arn:aws:bedrock:eu-central-1:ACCOUNT_ID:model-import-job/*" }
+      }
+    }
+  ]
+}

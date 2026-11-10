@@ -1,0 +1,20 @@
+{"ticket": "our lambda keeps timing out when it calls the RDS db, started after yesterdays deploy. checkout is completely down for ALL customers!!", "service": "Lambda", "severity": "critical", "category": "timeout"}
+{"ticket": "getting AccessDenied when my app reads from the s3 bucket. only happening in our dev account, prod is fine", "service": "S3", "severity": "medium", "category": "permissions"}
+{"ticket": "quick question - why is my EC2 bill higher this month? might have left a few test instances running", "service": "EC2", "severity": "low", "category": "cost"}
+{"ticket": "dynamodb throwing ProvisionedThroughputExceededException at peak in prod. some writes failing, site mostly ok", "service": "DynamoDB", "severity": "high", "category": "throttling"}
+{"ticket": "hit the elastic IP limit, cant allocate more. need an increase for a new env we're building next week", "service": "EC2", "severity": "low", "category": "quota"}
+{"ticket": "cloudfront returning 502 for everyone on the main website. whole site is down", "service": "CloudFront", "severity": "critical", "category": "outage"}
+{"ticket": "API gateway p99 latency went from 100ms to 2s in prod. still working just really slow", "service": "API Gateway", "severity": "high", "category": "performance"}
+{"ticket": "ECS tasks failing to start in staging with CannotPullContainerError. private subnet, no NAT i think?", "service": "ECS", "severity": "medium", "category": "configuration"}
+{"ticket": "prod pipeline cant assume the deploy role anymore, all deployments blocked. site itself running fine", "service": "IAM", "severity": "high", "category": "permissions"}
+{"ticket": "RDS postgres read replica is 30 mins behind in prod, reports showing stale data", "service": "RDS", "severity": "high", "category": "performance"}
+{"ticket": "how do i turn on versioning for an existing s3 bucket? just asking", "service": "S3", "severity": "low", "category": "configuration"}
+{"ticket": "EKS nodes not joining the cluster in our test env since we upgraded the version", "service": "EKS", "severity": "medium", "category": "configuration"}
+{"ticket": "SQS queue backing up in prod, messages sitting for hours. orders delayed but nothing lost", "service": "SQS", "severity": "high", "category": "performance"}
+{"ticket": "someone deleted the production dynamodb table by accident!!! everything is down need to restore NOW", "service": "DynamoDB", "severity": "critical", "category": "outage"}
+{"ticket": "s3 costs doubled, think old object versions are piling up. low priority", "service": "S3", "severity": "low", "category": "cost"}
+{"ticket": "prod EC2 web server failed status checks and is unreachable. its one of three behind the ALB, other two are fine", "service": "EC2", "severity": "high", "category": "outage"}
+{"ticket": "dev lambda says Task timed out after 3.00 seconds, probably need to raise the timeout?", "service": "Lambda", "severity": "medium", "category": "timeout"}
+{"ticket": "RDS storage full in production, database refusing writes, app is down", "service": "RDS", "severity": "critical", "category": "outage"}
+{"ticket": "403 forbidden from api gateway on a new endpoint in dev. forgot to deploy the stage or its the IAM auth", "service": "API Gateway", "severity": "medium", "category": "permissions"}
+{"ticket": "we're at the 100 bucket limit in s3, need an increase for a project next quarter", "service": "S3", "severity": "low", "category": "quota"}
