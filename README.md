@@ -381,6 +381,7 @@ python test_model.py --target local --json-mode
 Make sure you're signed in (`aws sts get-caller-identity`) and your virtual environment is active, then:
 
 ```bash
+chmod +x scripts/*.sh
 export AWS_REGION=eu-central-1
 ./scripts/setup_aws.sh
 ```
